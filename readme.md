@@ -72,6 +72,13 @@ int main(int argc, char* argv[]) {
 ```
 
 ```
+# tcpdump --version
+tcpdump version 4.9.2
+libpcap version 1.8.1
+OpenSSL 1.1.0g  2 Nov 2017
+```
+
+```
 # ./pcap_close_test eth0
 WARNING: Logging before InitGoogleLogging() is written to STDERR
 I1203 23:03:10.041653 17882 main.cpp:55] bef sleep
