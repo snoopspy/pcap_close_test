@@ -1,7 +1,7 @@
 pcap_next_ex hangs forever
 =
 
-pcap_next_ex function does not wake up when not only read_timeout elapsed, but also pcap_close is called in other thread. See the following result. pcap_next_ex function wakes up when only filtering packet is sniffed.
+pcap_next_ex function does not wake up even if not only read_timeout elapsed, but also pcap_close is called in the other thread. See the following result. pcap_next_ex function wakes up when only filtering packet is sniffed.
 
 ```cpp
 #include <pcap.h>
